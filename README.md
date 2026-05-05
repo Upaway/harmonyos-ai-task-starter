@@ -19,12 +19,19 @@ The project goal is to provide a practical, real-world template for building AI-
 
 ## Screenshots
 
-Screenshots will be added under `docs/screenshots/`. Placeholder links:
+Screenshots are stored under `docs/screenshots/`.
 
-- `docs/screenshots/home.png` (Home)
-- `docs/screenshots/focus.png` (Focus Session)
-- `docs/screenshots/result.png` (Session Result)
-- `docs/screenshots/stats.png` (Stats / Settings)
+Home
+![Home](docs/screenshots/home.jpg)
+
+Start Confirmation
+![Start Confirmation](docs/screenshots/confirm.jpg)
+
+Focus Session
+![Focus Session](docs/screenshots/focus.jpg)
+
+Stats and Settings
+![Stats and Settings](docs/screenshots/stats.jpg)
 
 ## Features
 
