@@ -1,0 +1,61 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storePassword": "00000016E8F...",  // 从DevEco Studio获取加密密码
+          "certpath": "./key/debug.cer",
+          "keyAlias": "debug_key",
+          "keyPassword": "00000016E8F...",     // 从DevEco Studio获取加密密码
+          "profile": "./key/debug.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "./key/debug.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "6.0.2(22)",
+        "targetSdkVersion": "6.0.2(22)",
+        "runtimeOS": "HarmonyOS"
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+/*
+⚠️ 重要提示：
+1. storePassword 和 keyPassword 不是原始密码，而是加密后的密码
+2. 获取加密密码的方法：
+   - 在DevEco Studio中打开 Project Structure → Signing Configs
+   - 点击 "Get Password" 按钮，会自动生成加密密码
+   - 或者使用 DevEco Studio 的签名配置工具自动填充
+
+3. 如果不想手动配置，建议使用自动签名方案（方案A）
+*/

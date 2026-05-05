@@ -1,0 +1,83 @@
+# macOS / system
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# IDE and editor
+.idea/
+.vscode/
+.cursor/
+.appanalyzer/
+*.swp
+*.swo
+*~
+
+# HarmonyOS / DevEco caches
+.hvigor/
+.ohos/
+.deveco/
+.externalNativeBuild/
+.cxx/
+
+# Build artifacts
+build/
+dist/
+report/
+coverage/
+out/
+tmp/
+temp/
+**/build/
+**/outputs/
+**/intermediates/
+**/generated/
+**/.ts_checker_cache
+*.log
+*.tmp
+
+# Dependencies / toolchains
+node_modules/
+.setup/
+
+# Local machine config
+local.properties
+build-profile.json5
+
+# Signing / certificate / profile (critical)
+cert/
+key/
+keys/
+keystore/
+sign/
+signing/
+*.p12
+*.p7b
+*.cer
+*.crt
+*.pem
+*.key
+*.jks
+*.keystore
+*.csr
+*.mobileprovision
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+*.secret
+*.secrets
+
+# Local scripts (keep private by default)
+*.sh
+
+# Docs policy for conservative open-source baseline
+docs/**
+!docs/architecture.md
+!docs/ai-workflow.md
+!docs/harmonyos-release-checklist.md
+!docs/appgallery-submit-notes.md
+!docs/releases/
+!docs/releases/v0.1-manual-test.md
+

@@ -1,0 +1,17 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "Just Start entry module"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "开始做事主入口"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "开始做事"
+    }
+  ]
+}
+

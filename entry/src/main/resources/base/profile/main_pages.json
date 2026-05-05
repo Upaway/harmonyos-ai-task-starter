@@ -1,0 +1,10 @@
+{
+  "src": [
+    "pages/HomePage",
+    "pages/StartConfirmPage",
+    "pages/FocusPage",
+    "pages/SessionResultPage",
+    "pages/StatsSettingsPage"
+  ]
+}
+
