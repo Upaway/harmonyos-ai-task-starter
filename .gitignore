@@ -74,4 +74,11 @@ signing/
 docs/private/
 private/
 release-private/
+docs/project-memory.md
+docs/roadmap/
+docs/engineering/
+docs/releases/appgallery-assets-*/
+generate-cert.sh
+generate-csr.sh
+generate-csr-ecdsa.sh
 
