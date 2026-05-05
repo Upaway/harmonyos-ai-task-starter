@@ -4,7 +4,7 @@
   "description": "entry module for Just Start",
   "main": "",
   "author": "",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "dependencies": {}
 }
 

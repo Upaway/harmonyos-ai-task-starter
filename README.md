@@ -1,5 +1,13 @@
 # Just Start (开始做事)
 
+## Project Status
+
+This repository is currently an open-source baseline for Just Start / 开始做事.
+
+- v0.1: local-first Pomodoro and focus workflow
+- v0.2: AI-assisted task decomposition is planned
+- No account system, no cloud sync, no sensitive permissions in the current baseline
+
 `Just Start` is an open-source HarmonyOS NEXT productivity app template focused on:
 
 - Pomodoro / focus timer
@@ -11,7 +19,7 @@ The project goal is to provide a practical, real-world template for building AI-
 
 ## Screenshots
 
-Add screenshots under `docs/screenshots/` and update links below:
+Screenshots will be added under `docs/screenshots/`. Placeholder links:
 
 - `docs/screenshots/home.png` (Home)
 - `docs/screenshots/focus.png` (Focus Session)

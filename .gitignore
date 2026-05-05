@@ -38,13 +38,14 @@ temp/
 
 # Dependencies / toolchains
 node_modules/
+oh_modules/
 .setup/
 
 # Local machine config
 local.properties
 build-profile.json5
 
-# Signing / certificate / profile (critical)
+# Signing / certificate / profile
 cert/
 key/
 keys/
@@ -69,15 +70,8 @@ signing/
 *.secret
 *.secrets
 
-# Local scripts (keep private by default)
-*.sh
-
-# Docs policy for conservative open-source baseline
-docs/**
-!docs/architecture.md
-!docs/ai-workflow.md
-!docs/harmonyos-release-checklist.md
-!docs/appgallery-submit-notes.md
-!docs/releases/
-!docs/releases/v0.1-manual-test.md
+# Private release materials
+docs/private/
+private/
+release-private/
 
