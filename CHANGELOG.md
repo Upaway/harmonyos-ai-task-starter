@@ -8,7 +8,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/) principles.
 
 ### Changed
 
-- （暂无）
+- **Linguist**：`.gitattributes` 增补 `*.py` 为 `linguist-vendored`，降低辅助 Python 脚本在语言统计中的权重（不改变源码可见性）。
+- **文档**：`docs/quickstart.md` 补充 SDK 对齐说明与 `build-profile` 复制提示；`docs/project-structure.md` 补充 `entry/src/main/resources/` 及目录说明。
+- **README**：快速开始 / 项目结构标题增加 Run locally · Project structure，并强化指向上述文档的链接。
 
 ---
 

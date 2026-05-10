@@ -37,7 +37,7 @@
 
 ---
 
-## 快速开始
+## 快速开始（Run locally）
 
 1. 安装 **DevEco Studio** 与 HarmonyOS NEXT **SDK**（版本需与工程配置一致）。
 2. 用 DevEco **打开本仓库根目录**。
@@ -45,11 +45,11 @@
 4. **本地签名**：将 `build-profile.json5.template` 复制为 **`build-profile.json5`**（已被 `.gitignore` 忽略），仅在本地填入签名材料路径与加密口令；**勿将真实 `build-profile.json5`、证书、profile 提交到 GitHub。**
 5. 选择 **`entry`** 模块，以 **Debug** 运行到真机或模拟器。
 
-更细的步骤与故障排查见 **[`docs/quickstart.md`](docs/quickstart.md)**。
+完整步骤、模板复制说明与故障排查：**[`docs/quickstart.md`](docs/quickstart.md)**。
 
 ---
 
-## 项目结构（概要）
+## 项目结构（Project structure）
 
 | 路径 | 作用 |
 |------|------|
@@ -59,7 +59,7 @@
 | `scripts/` | 辅助脚本（如图标相关生成，非运行时依赖） |
 | 根目录 | `hvigorfile.ts`、`oh-package.json5`、`build-profile.json5.template` 等构建与工程配置 |
 
-完整目录说明见 **[`docs/project-structure.md`](docs/project-structure.md)**。
+分层目录与 `entry/src/main/ets/` 各子目录说明：**[`docs/project-structure.md`](docs/project-structure.md)**。
 
 ---
 
@@ -108,7 +108,7 @@
 | [`docs/ai-workflow.md`](docs/ai-workflow.md) | AI 协作方式与边界 |
 | [`docs/release-checklist.md`](docs/release-checklist.md) | 发布与开源检查项 |
 | [`docs/harmonyos-release-checklist.md`](docs/harmonyos-release-checklist.md) | HarmonyOS 上架相关补充清单 |
-| [`docs/releases/v0.1.0.md`](docs/releases/v0.1.0.md) | v0.1.0 Baseline 说明草稿 |
+| [`docs/releases/v0.1.0.md`](docs/releases/v0.1.0.md) | v0.1.0 Baseline 发布说明 |
 | [`CHANGELOG.md`](CHANGELOG.md) | 变更记录 |
 
 ---

@@ -5,7 +5,7 @@
 ## 环境要求
 
 - **操作系统**：Windows / macOS（与 DevEco Studio 支持列表一致）。
-- **DevEco Studio**：建议 **6.x**，且已安装与本工程一致的 HarmonyOS NEXT **SDK**（见根目录 `build-profile.json5.template` 内 `compatibleSdkVersion` / `targetSdkVersion` 示例）。
+- **DevEco Studio**：建议 **6.x**，且已在 SDK Manager 中安装与本工程一致的能力包。本仓库模板中的产品与 SDK 对齐关系为 **`compatibleSdkVersion` / `targetSdkVersion`: `6.0.2(22)`**（见根目录 [`build-profile.json5.template`](../build-profile.json5.template)）；若你本地使用更高 API，需自行验证兼容性。
 - **设备**：HarmonyOS NEXT 真机（开发者模式/USB 调试）或官方模拟器。
 
 ## 打开项目
@@ -24,11 +24,12 @@
 
 ## 本地签名（不要提交）
 
-1. 复制模板：
+1. 在仓库**根目录**将模板复制为本地配置文件（文件名固定为 `build-profile.json5`）：
    ```text
    build-profile.json5.template  →  build-profile.json5
    ```
-2. 仅在**本机**填写：
+   `build-profile.json5` 已被 `.gitignore` 忽略，**不会**进入 `git status` 的默认提交集。
+2. 仅在**本机**用 DevEco / 文档指引填写：
    - keystore / profile 路径（建议放在被 `.gitignore` 覆盖的 `cert/` 等目录）；
    - DevEco 生成的 **加密后** `storePassword` / `keyPassword`（勿使用明文占位直接上架）。
 3. **切勿**将 `build-profile.json5`、`.p12`、`.p7b`、`.cer` 等推送到公开仓库（本仓库已在 `.gitignore` 中忽略常见路径）。

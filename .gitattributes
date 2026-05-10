@@ -5,7 +5,11 @@
 package-lock.json linguist-generated
 
 docs/** linguist-documentation
+
+# `scripts/` only contains offline helpers (e.g. icon PNG generation), not runtime code.
+# Explicit `*.py` ensures the lone Python file is not weighted as primary project language.
 scripts/** linguist-vendored
+*.py linguist-vendored
 
 # Binary media (optional explicit binary handling)
 *.png binary
