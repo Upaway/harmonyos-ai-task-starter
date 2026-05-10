@@ -1,0 +1,14 @@
+# Language stats (GitHub Linguist): keep ArkTS / TS-like sources visible,
+# treat lockfiles and helper scripts as generated/vendored where appropriate.
+*.ets linguist-language=TypeScript
+
+package-lock.json linguist-generated
+
+docs/** linguist-documentation
+scripts/** linguist-vendored
+
+# Binary media (optional explicit binary handling)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary

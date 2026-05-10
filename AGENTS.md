@@ -6,11 +6,13 @@ This document defines how AI coding agents should collaborate in this repository
 
 `Just Start` is a HarmonyOS NEXT productivity app template:
 
-- v0.1: local-first Pomodoro workflow (no AI/account/cloud)
-- v0.2: AI-assisted task decomposition
-- v0.3: AppGallery release hardening
+- v0.1: local-first baseline — Pomodoro-style focus loop (no AI/account/cloud in shipped baseline)
+- v0.2: task experience improvements
+- v0.3: focus / Pomodoro experience refinements
+- v0.4: AI task decomposition exploration (not committed until scoped)
+- v1.0: store-facing stability and compliance hardening
 
-Always keep the current milestone boundary explicit.
+Details and non-goals: `docs/roadmap.md`. Always keep the current milestone boundary explicit.
 
 ## Tech Stack
 

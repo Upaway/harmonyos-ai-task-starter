@@ -1,8 +1,12 @@
 # macOS / system
+**/.DS_Store
 .DS_Store
 ._*
 .Spotlight-V100
 .Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
 # IDE and editor
 .idea/
@@ -12,6 +16,10 @@
 *.swp
 *.swo
 *~
+*.sublime-*
+.project
+.classpath
+.settings/
 
 # HarmonyOS / DevEco caches
 .hvigor/
@@ -34,7 +42,14 @@ temp/
 **/generated/
 **/.ts_checker_cache
 *.log
+*.log.*
+npm-debug.log*
+yarn-error.log*
 *.tmp
+*.temp
+*.cache
+.hvigorw/
+ohpm-debug.log
 
 # Dependencies / toolchains
 node_modules/

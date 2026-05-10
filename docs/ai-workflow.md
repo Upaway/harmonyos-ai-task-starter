@@ -1,40 +1,48 @@
-# AI Workflow (Solo Developer)
+# AI 协作工作流（真实版）
 
-## Goal
+本文说明 **在本仓库里 AI 工具实际承担什么**，以及 **人不能交给模型的判断**。不是广告，也不是「用 AI 就能上线」的叙事。
 
-Use AI coding agents to improve delivery speed while keeping quality and security under control.
+## 本项目怎么用 AI
 
-## Recommended Loop
+典型场景：
 
-1. Define a small, testable task.
-2. Ask agent to inspect only relevant files.
-3. Apply minimal patch.
-4. Run manual verification for key flow.
-5. Update docs/changelog if behavior changed.
+- **读代码 / 补上下文**：快速定位页面、ViewModel、存储层关系。
+- **写文档与清单**：README、`docs/`、Release Checklist、Issue 模板。
+- **小步修改**：在明确约束下改文案、注释、非业务耦合的工具函数。
+- **对照规范检查**：对照 `.gitignore`、`SECURITY.md`、权限列表做静态自查（仍需人工确认）。
 
-## Prompting Principles
+推荐节奏：**小任务 → 小 PR → 真机或模拟器验证关键路径**。
 
-- Be explicit about scope and non-goals.
-- Specify "do not touch business logic" when doing infra/docs chores.
-- Request security scan before release-related work.
-- Ask for risk list and alternatives before deleting sensitive config.
+## 人负责什么
 
-## Safety Guardrails
+- **产品范围与里程碑**：做不做某个功能、是否进入 v0.2 / v0.3。
+- **签名、证书、华为开发者后台、AppGallery Connect**：账号与材料归属开发者本人；AI 只能提醒风险，不能代操作。
+- **隐私与合规**：对外文案、权限说明、用户协议与隐私政策是否与实际行为一致。
+- **合并与发布**：是否合入 `main`、是否打 tag、是否提交商店——由维护者决定。
 
-- Never paste real secrets into prompts.
-- Require agent to flag hardcoded credentials and local paths.
-- Keep signing files and profile materials local-only.
-- Review diffs before commit.
+## AI 适合承担的任务（示例）
 
-## Suggested Task Split
+| 工具类型 | 适合的内容 |
+|----------|------------|
+| **IDE 内 Agent（如 Cursor）** | 单仓库内搜索、按文件引用改代码、同步更新 README/CHANGELOG。 |
+| **CLI / Codex 类** | 脚本化检查、批量重命名（仍需谨慎 diff）、生成样板文档结构。 |
+| **通用对话模型** | 解释 ArkUI 概念、起草文档段落、把口语需求拆成开发任务清单（需人裁剪）。 |
 
-- PR 1: repository hygiene (`.gitignore`, docs baseline)
-- PR 2: build/release scripts cleanup
-- PR 3: feature work (v0.1 bug fix or v0.2 AI capability)
+## 必须人工判断的内容
 
-## Definition of Done (Per Change)
+- **是否泄露密钥或个人信息**：任何涉及 `build-profile`、证书路径、真实邮箱/手机的内容。
+- **是否改变对外承诺**：文档里「已实现 / 计划中」是否与代码一致。
+- **是否破坏主流程**：专注闭环能否跑通；本地数据是否仍可靠。
+- **是否与路线图冲突**：例如基准版强行加联网、账号或重度依赖云服务。
 
-- scope matched request
-- no secret leakage
-- manual flow still works
-- docs updated where needed
+## 本项目的协作边界（简版）
+
+1. **v0.1 基准未稳定前**：优先修阻塞主流程的问题与文档；避免大范围重构。
+2. **不默认增加权限**：尤其网络、通讯录等；若未来需要，必须单独评审。
+3. **不把未实现能力写成「已完成」**（尤其在 README、商店文案、对外申请材料的描述中）。
+4. **不把真实密钥贴进对话或仓库**；模板与占位符留在 `*.template` / `.env.example`。
+
+## 和 `AGENTS.md` 的关系
+
+- `AGENTS.md`：给自动化代理的 **硬性仓库规则**（禁止提交签名文件等）。
+- 本文：给人看的 **工作方式与分工**；冲突时以更安全、更保守的为准。
