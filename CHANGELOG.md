@@ -1,16 +1,30 @@
 # Changelog
 
-All notable changes to this project are documented in this file.
+All notable changes to this project will be documented in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/) principles.
 
 ## [Unreleased]
 
+---
+
+## [0.1.1] - 2026-05-11
+
+### 摘要
+
+文档与开源维护小更新：对齐 Roadmap 表述、补充排障指南。**无**新核心业务功能、**无** UI 改动、**无**新依赖。
+
+### Added
+
+- **`docs/troubleshooting.md`**：DevEco 打开工程、SDK/API、`build-profile`、签名与真机、hvigor/ohpm 同步、协作勿提交敏感材料等说明。
+- **`docs/releases/v0.1.1.md`**：本版本 Release 说明草稿。
+
 ### Changed
 
-- **Linguist**：收紧 `.gitattributes`——强化 `*.ets` → TypeScript 覆盖、`*.py` 使用 `linguist-detectable=false`；README 简短说明语言统计与 `.ets` 的关系。
-- **文档**：重写精简 `docs/quickstart.md`（DevEco/SDK、`build-profile` 模板、`entry` 运行）；`docs/project-structure.md` 改为每目录 1～2 句话。
-- **README**：技术栈下补充 Linguist 说明；微调指向 quickstart / project-structure 的文案链接。
+- **`CHANGELOG`**：将原 `[Unreleased]` 中的维护记录归入本节。
+- **`.gitattributes`**：强化 `.ets` → TypeScript、辅助 `.py` 不参与语言主占比；README 中保留简短 Linguist 说明。
+- **`docs/quickstart.md`**、`docs/project-structure.md`：前期精简版内容与导航延续；quickstart 增加 troubleshooting 链接。
+- **`README`**：Run locally / 文档区链接 troubleshooting；Roadmap 摘要旁明确 **v0.2** 与 **v0.4（AI 拆解探索）** 分工（中英文一句）；文档索引补充 troubleshooting 与本 Release 说明。
 
 ---
 

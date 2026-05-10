@@ -13,7 +13,7 @@
 | **方向** | 任务记录 / 番茄式专注闭环；后续迭代再探索 **AI 任务拆解**（尚未在本基准中实现）。 |
 | **开源定位** | 真实工程的裁剪开源副本 + 协作记录，不是「用完即弃的 Demo」。 |
 
-**版本约定：** 仓库 Git 标签（如 `v0.1.0` Baseline）表示开源快照节点；应用安装包上的版本号以 [`AppScope/app.json5`](AppScope/app.json5) 的 `versionName` / `versionCode` 为准，二者含义不同、不必相同。详见 [`docs/releases/v0.1.0.md`](docs/releases/v0.1.0.md)。
+**版本约定：** 仓库 Git 标签（如 `v0.1.0` Baseline、`v0.1.1` 文档维护）表示开源快照节点；应用安装包上的版本号以 [`AppScope/app.json5`](AppScope/app.json5) 的 `versionName` / `versionCode` 为准，二者含义不同、不必相同。详见 [`docs/releases/v0.1.0.md`](docs/releases/v0.1.0.md)、[`docs/releases/v0.1.1.md`](docs/releases/v0.1.1.md)。
 
 ---
 
@@ -47,7 +47,8 @@ GitHub 仓库主页的 **Languages** 饼图由 Linguist 按字节估算：`.ets`
 4. **本地签名**：将 `build-profile.json5.template` 复制为 **`build-profile.json5`**（已被 `.gitignore` 忽略），仅在本地填入签名材料路径与加密口令；**勿将真实 `build-profile.json5`、证书、profile 提交到 GitHub。**
 5. 选择 **`entry`** 模块，以 **Debug** 运行到真机或模拟器。
 
-本地运行完整步骤（SDK、打开工程、复制模板、`entry` 模块）：**[`docs/quickstart.md`](docs/quickstart.md)**。
+本地运行完整步骤（SDK、打开工程、复制模板、`entry` 模块）：**[`docs/quickstart.md`](docs/quickstart.md)**。  
+卡住时请先看：**[`docs/troubleshooting.md`](docs/troubleshooting.md)**。
 
 ---
 
@@ -84,6 +85,8 @@ GitHub 仓库主页的 **Languages** 饼图由 Linguist 按字节估算：`.ets`
 
 阶段目标（**不承诺时间节点**）见 **[`docs/roadmap.md`](docs/roadmap.md)**。摘要：
 
+> **Roadmap note：** AI-assisted task decomposition is planned for **v0.4**. **v0.2** focuses on task and focus workflow polish.
+
 - **v0.1** — 基准版本：本地专注闭环可运行、工程与文档可复现。
 - **v0.2** — 任务体验优化。
 - **v0.3** — 番茄 / 专注体验完善。
@@ -105,12 +108,14 @@ GitHub 仓库主页的 **Languages** 饼图由 Linguist 按字节估算：`.ets`
 | 文档 | 说明 |
 |------|------|
 | [`docs/quickstart.md`](docs/quickstart.md) | 环境、同步依赖、运行、常见问题 |
+| [`docs/troubleshooting.md`](docs/troubleshooting.md) | DevEco/SDK、签名、同步与真机排障 |
 | [`docs/architecture.md`](docs/architecture.md) | 架构与模块边界 |
 | [`docs/roadmap.md`](docs/roadmap.md) | 路线图 |
 | [`docs/ai-workflow.md`](docs/ai-workflow.md) | AI 协作方式与边界 |
 | [`docs/release-checklist.md`](docs/release-checklist.md) | 发布与开源检查项 |
 | [`docs/harmonyos-release-checklist.md`](docs/harmonyos-release-checklist.md) | HarmonyOS 上架相关补充清单 |
 | [`docs/releases/v0.1.0.md`](docs/releases/v0.1.0.md) | v0.1.0 Baseline 发布说明 |
+| [`docs/releases/v0.1.1.md`](docs/releases/v0.1.1.md) | v0.1.1 开源维护更新说明 |
 | [`CHANGELOG.md`](CHANGELOG.md) | 变更记录 |
 
 ---

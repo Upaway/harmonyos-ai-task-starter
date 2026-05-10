@@ -50,6 +50,8 @@
 | 安装失败 | 检查本地 `build-profile.json5` 与华为后台 Profile 是否匹配 |
 | 找不到模块 | 确认打开的是含 `AppScope` 与 `entry` 的根目录 |
 
+更系统的排查步骤见 **[`troubleshooting.md`](troubleshooting.md)**。
+
 ## 开源安全提醒
 
 - 本基准不依赖 `.env` 中的云端密钥（参见根目录 `.env.example`）。
