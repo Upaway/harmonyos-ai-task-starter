@@ -8,7 +8,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/) principles.
 
 ### Changed
 
-- （预留：下一版本变更记录）
+- （暂无）
 
 ---
 
@@ -27,7 +27,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/) principles.
 
 ### Changed
 
-- **README**：按基准版本与诚实功能边界重写；补充仓库链接、文档索引与 Roadmap 摘要
+- **README**：按基准版本与诚实功能边界重写；补充仓库链接、文档索引与 Roadmap 摘要；补充「Git 标签 vs 应用版本号」约定与 Release 文档链接
+- **`docs/releases/v0.1.0.md`**：定稿发布说明，区分 **`v0.1.0` 开源快照**与 **`AppScope/app.json5`**（`versionName` / `versionCode`）
 - **`.gitignore`**：补充常见 IDE、缓存与日志类忽略规则
 
 ### Security / hygiene

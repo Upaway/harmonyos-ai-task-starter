@@ -13,6 +13,8 @@
 | **方向** | 任务记录 / 番茄式专注闭环；后续迭代再探索 **AI 任务拆解**（尚未在本基准中实现）。 |
 | **开源定位** | 真实工程的裁剪开源副本 + 协作记录，不是「用完即弃的 Demo」。 |
 
+**版本约定：** 仓库 Git 标签（如 `v0.1.0` Baseline）表示开源快照节点；应用安装包上的版本号以 [`AppScope/app.json5`](AppScope/app.json5) 的 `versionName` / `versionCode` 为准，二者含义不同、不必相同。详见 [`docs/releases/v0.1.0.md`](docs/releases/v0.1.0.md)。
+
 ---
 
 ## 技术栈
