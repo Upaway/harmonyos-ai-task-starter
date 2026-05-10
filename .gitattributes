@@ -1,17 +1,19 @@
-# Language stats (GitHub Linguist): keep ArkTS / TS-like sources visible,
-# treat lockfiles and helper scripts as generated/vendored where appropriate.
+# GitHub Linguist — HarmonyOS / ArkTS
+#
+# Upstream Linguist 的 TypeScript 条目默认不含 `.ets`；若不在此显式覆盖，
+# `.ets` 可能不计入 TypeScript，导致少量 `.py` / `.ts` 在占比上异常偏大。
+**/*.ets linguist-language=TypeScript
 *.ets linguist-language=TypeScript
 
 package-lock.json linguist-generated
 
 docs/** linguist-documentation
 
-# `scripts/` only contains offline helpers (e.g. icon PNG generation), not runtime code.
-# Explicit `*.py` ensures the lone Python file is not weighted as primary project language.
+# 离线辅助脚本（图标生成等），非 App 运行时源码：不参与语言占比。
+*.py linguist-detectable=false
 scripts/** linguist-vendored
-*.py linguist-vendored
 
-# Binary media (optional explicit binary handling)
+# 二进制资源
 *.png binary
 *.jpg binary
 *.jpeg binary

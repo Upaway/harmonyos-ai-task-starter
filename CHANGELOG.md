@@ -8,9 +8,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/) principles.
 
 ### Changed
 
-- **Linguist**：`.gitattributes` 增补 `*.py` 为 `linguist-vendored`，降低辅助 Python 脚本在语言统计中的权重（不改变源码可见性）。
-- **文档**：`docs/quickstart.md` 补充 SDK 对齐说明与 `build-profile` 复制提示；`docs/project-structure.md` 补充 `entry/src/main/resources/` 及目录说明。
-- **README**：快速开始 / 项目结构标题增加 Run locally · Project structure，并强化指向上述文档的链接。
+- **Linguist**：收紧 `.gitattributes`——强化 `*.ets` → TypeScript 覆盖、`*.py` 使用 `linguist-detectable=false`；README 简短说明语言统计与 `.ets` 的关系。
+- **文档**：重写精简 `docs/quickstart.md`（DevEco/SDK、`build-profile` 模板、`entry` 运行）；`docs/project-structure.md` 改为每目录 1～2 句话。
+- **README**：技术栈下补充 Linguist 说明；微调指向 quickstart / project-structure 的文案链接。
 
 ---
 

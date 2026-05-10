@@ -25,6 +25,8 @@
 - hvigor · ohpm
 - 本地持久化：`Preferences`
 
+GitHub 仓库主页的 **Languages** 饼图由 Linguist 按字节估算：`.ets` 已在 [`.gitattributes`](.gitattributes) 中归入 **TypeScript**，离线 Python 辅助脚本不计入主占比；合并默认分支后若比例仍异常，多为索引延迟，可稍后刷新再看。
+
 ---
 
 ## 功能状态（诚实边界）
@@ -45,7 +47,7 @@
 4. **本地签名**：将 `build-profile.json5.template` 复制为 **`build-profile.json5`**（已被 `.gitignore` 忽略），仅在本地填入签名材料路径与加密口令；**勿将真实 `build-profile.json5`、证书、profile 提交到 GitHub。**
 5. 选择 **`entry`** 模块，以 **Debug** 运行到真机或模拟器。
 
-完整步骤、模板复制说明与故障排查：**[`docs/quickstart.md`](docs/quickstart.md)**。
+本地运行完整步骤（SDK、打开工程、复制模板、`entry` 模块）：**[`docs/quickstart.md`](docs/quickstart.md)**。
 
 ---
 
@@ -59,7 +61,7 @@
 | `scripts/` | 辅助脚本（如图标相关生成，非运行时依赖） |
 | 根目录 | `hvigorfile.ts`、`oh-package.json5`、`build-profile.json5.template` 等构建与工程配置 |
 
-分层目录与 `entry/src/main/ets/` 各子目录说明：**[`docs/project-structure.md`](docs/project-structure.md)**。
+目录树与各文件夹职责：**[`docs/project-structure.md`](docs/project-structure.md)**。
 
 ---
 
