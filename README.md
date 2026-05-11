@@ -103,6 +103,18 @@ GitHub 仓库主页的 **Languages** 饼图由 Linguist 按字节估算：`.ets`
 
 ---
 
+## Community & Proof
+
+这个仓库同时服务于一个「鸿蒙单人开发」公开内容系列：把真实开发过程中的问题、取舍和排障沉淀回开源仓库，形成可复用的资料。
+
+- 系列入口与证明材料：[`docs/community-proof.md`](docs/community-proof.md)
+- 维护者角色：核心维护、路线图推进、文档与发布节奏维护（见 `CHANGELOG.md` 与 `docs/releases/`）
+- 受众价值：帮助 HarmonyOS NEXT 新手从 0 到可运行基线，减少环境与签名配置踩坑
+
+> Note: External audience signals (for example Xiaohongshu posts and engagement) are documented with public links in `docs/community-proof.md` for transparent verification.
+
+---
+
 ## 文档索引
 
 | 文档 | 说明 |
@@ -112,6 +124,7 @@ GitHub 仓库主页的 **Languages** 饼图由 Linguist 按字节估算：`.ets`
 | [`docs/architecture.md`](docs/architecture.md) | 架构与模块边界 |
 | [`docs/roadmap.md`](docs/roadmap.md) | 路线图 |
 | [`docs/ai-workflow.md`](docs/ai-workflow.md) | AI 协作方式与边界 |
+| [`docs/community-proof.md`](docs/community-proof.md) | 外部内容与仓库演进的可核验证据 |
 | [`docs/release-checklist.md`](docs/release-checklist.md) | 发布与开源检查项 |
 | [`docs/harmonyos-release-checklist.md`](docs/harmonyos-release-checklist.md) | HarmonyOS 上架相关补充清单 |
 | [`docs/releases/v0.1.0.md`](docs/releases/v0.1.0.md) | v0.1.0 Baseline 发布说明 |
