@@ -40,7 +40,13 @@ Do not include private dashboards or non-public screenshots in the repository.
 
 ### Evidence from current screenshots (privacy-sanitized summary)
 
-The maintainer provided three Xiaohongshu screenshots as private evidence material:
+The maintainer provided three Xiaohongshu screenshots as evidence material. Public copies below are cropped to remove device status-bar details while preserving the relevant community proof.
+
+![Xiaohongshu profile overview](assets/community-proof/xhs-profile-overview-redacted.jpg)
+
+![Xiaohongshu open-source post](assets/community-proof/xhs-open-source-post-redacted.jpg)
+
+![Xiaohongshu vibe-coding post](assets/community-proof/xhs-vibe-coding-post-redacted.jpg)
 
 - Profile/notes overview screenshot shows a HarmonyOS-focused creator profile and two related posts.
 - Post A (`做鸿蒙 App 的第二步，先把代码摊开`) shows:
