@@ -31,6 +31,9 @@ Desktop.ini
 # Build artifacts
 build/
 dist/
+
+# Local automation outputs (screenshots, hilog dumps, summaries)
+artifacts/
 report/
 coverage/
 out/
@@ -55,6 +58,10 @@ ohpm-debug.log
 node_modules/
 oh_modules/
 .setup/
+
+# Python bytecode (local automation)
+**/__pycache__/
+*.py[cod]
 
 # Local machine config
 local.properties

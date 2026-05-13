@@ -52,6 +52,8 @@ export class LocalStorageService {
       await store.flush();
     } catch (error) {
       console.error('LocalStorageService putString error:', error);
+      const message: string = error instanceof Error ? error.message : String(error);
+      throw new Error(`LocalStorageService putString failed: ${message}`);
     }
   }
 }

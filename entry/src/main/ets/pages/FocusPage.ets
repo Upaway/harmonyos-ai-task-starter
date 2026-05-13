@@ -36,6 +36,7 @@ struct FocusPage {
   private timerHandle: number = -1;
   private startedAt: string = new Date().toISOString();
   private hasNavigated: boolean = false;
+  private isFinishing: boolean = false;
 
   aboutToAppear(): void {
     try {
@@ -57,6 +58,7 @@ struct FocusPage {
       this.syncDerivedFromWallClock();
       this.hasValidParams = true;
       this.hasNavigated = false;
+      this.isFinishing = false;
 
       const hostContext: common.Context = this.getUIContext().getHostContext() as common.Context;
       void setFocusKeepScreenOn(hostContext, true);
@@ -121,10 +123,11 @@ struct FocusPage {
   }
 
   private async finishFocus(reason: FocusEndReason): Promise<void> {
-    if (this.hasNavigated) {
+    if (this.hasNavigated || this.isFinishing) {
       return;
     }
 
+    this.isFinishing = true;
     this.syncDerivedFromWallClock();
     this.clearTimer();
     const hostContext: common.Context = this.getUIContext().getHostContext() as common.Context;
@@ -143,10 +146,12 @@ struct FocusPage {
         }
       });
       this.hasNavigated = true;
+      this.isFinishing = false;
       void setFocusKeepScreenOn(hostContext, false);
     } catch (error) {
       console.error('FocusPage finishFocus error:', error);
       this.hasNavigated = false;
+      this.isFinishing = false;
       if (this.remainingSeconds > 0) {
         void setFocusKeepScreenOn(hostContext, true);
         this.startTimer();

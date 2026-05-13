@@ -128,6 +128,7 @@ struct HomePage {
                 await router.pushUrl({
                   url: RouteConstants.STATS_SETTINGS_PAGE
                 });
+                await this.loadPageData();
               } catch (error) {
                 console.error('HomePage navigate combined error:', error);
               }

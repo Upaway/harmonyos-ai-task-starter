@@ -1,0 +1,8 @@
+{
+  "bundle_name": "com.juststart.app",
+  "main_ability": "EntryAbility",
+  "device_serial": "",
+  "case_retry": 1,
+  "artifacts_dir": "artifacts/automation",
+  "install_path": "entry/build/default/outputs/default/entry-default-unsigned.hap"
+}
