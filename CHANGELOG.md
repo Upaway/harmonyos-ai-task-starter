@@ -8,6 +8,30 @@ The format follows [Keep a Changelog](https://keepachangelog.com/) principles.
 
 ---
 
+## [1.1.0] - 2026-05-13
+
+### 摘要
+
+应用版本 **1.1.0**（`AppScope/app.json5`）：修复设置默认专注时长后首页不即时刷新、专注结束重复触发风险；本地写入失败不再静默吞错。增加发版前自动化脚本与手册，并扩展手动回归条目。**不含**签名材料或构建产物提交。
+
+### Added
+
+- **`docs/testing/automation-playbook.md`**：发版前自动化分层与门禁说明。
+- **`scripts/release/pre_release_check.sh`**、`tests/`：基于 `hdc` 与可选 `hmdriver2` 的冒烟与 E2E 入口（示例配置不含密钥）。
+
+### Changed
+
+- **`AppScope/app.json5`**：`versionName` 1.1.0，`versionCode` 1000100。
+- **`.gitignore`**：忽略 `artifacts/` 与 Python `__pycache__` / `*.pyc`，降低误提交运行产物风险。
+
+### Fixed
+
+- **`HomePage`**：从统计设置返回后重新加载首页数据，默认时长即时一致。
+- **`FocusPage`**：结束专注流程增加并发保护，降低重复跳转结果页概率。
+- **`LocalStorageService`**：`putString` 失败时抛出 `Error`，避免上层误判保存成功。
+
+---
+
 ## [0.1.1] - 2026-05-11
 
 ### 摘要
